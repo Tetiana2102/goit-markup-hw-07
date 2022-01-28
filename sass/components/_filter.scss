@@ -10,9 +10,7 @@
     justify-content: center;
   }
   .button-portfolio {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
+    @include font (500, 16px, 1.63);
     color: var(--header-color);
     background: #F5F4FA;
     cursor: pointer;

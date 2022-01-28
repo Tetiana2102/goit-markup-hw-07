@@ -24,9 +24,7 @@
   }
 
 .tagline-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font (900, 44px, 1.36);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-color);
@@ -44,9 +42,7 @@
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font ($lh: 1.87);
   letter-spacing: 0.06em;
   cursor: pointer;
   display: flex;
@@ -57,12 +53,9 @@
   }
 }
 .tagline-btn-text {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
+  @include align-font();
+  @include font (null, 16px, 1.87);
   display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-color);
 }

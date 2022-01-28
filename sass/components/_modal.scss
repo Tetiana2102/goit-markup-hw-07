@@ -27,9 +27,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include display-align();
   box-sizing: border-box;
   position: absolute;
   top: 8px;
@@ -41,9 +39,7 @@
   visibility: hidden;
 }
 .modal-title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font (bold, 20px, 1.15);
   text-align: center;
   margin-bottom: 12px;
 }
@@ -89,9 +85,7 @@
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font (700, 16px, 1.87);
   letter-spacing: 0.06em;
   cursor: pointer;
   display: flex;
@@ -104,19 +98,14 @@
   }
 }
 .modal-btn-text {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
+  @include align-font();
+  @include font (null, 16px, 1.87);
   display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
 .input-text {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.17;
+  @include font (normal, 12px, 1.17);
   letter-spacing: 0.01em;
   color: var(--color-text);
   margin-bottom: 4px;
@@ -146,8 +135,7 @@
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  @include font (null, 14px, 1.71);
   color: #757575;
   padding-left: 8px;
   display: flex;
@@ -166,9 +154,7 @@
   border: 2px solid var(--header-color);
   border-radius: 2px;
   margin-right: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include display-align();
 }
 .policy-icon {
   fill: transparent;

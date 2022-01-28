@@ -7,13 +7,10 @@
   height: 184px;
 }
 .client-text {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font (null, 36px, 1.17);
   color: var(--header-color);
-  align-items: center;
-  text-align: center;
   padding-bottom: 50px;
+  @include align-font();
 }
   .client-list {
     display: flex;
@@ -25,9 +22,7 @@
     color: purple;
   }
   .client-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-align();
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     margin-left: 30px;

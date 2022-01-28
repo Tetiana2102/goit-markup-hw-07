@@ -26,25 +26,17 @@
 }
 .header-logo {
   margin-right: 93px;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19; 
+  @include family-weight();
+  @include font (null, 26px, 1.19);
   color: var(--header-color);
 }
 .logo-web-header {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19; 
+  @include family-weight();
+  @include font (null, 26px, 1.19);
   color: #2196F3;
 }
 .header-link {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.33;
+  @include font (bold, 14px, 1.33);
   letter-spacing: 0.02em;
   color: var(--header-color);
   transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,9 +62,7 @@
 }
 .header-contacts {
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.33;
+  @include font (bold, 14px, 1.33);
   letter-spacing: 0.02em;
   color: var(--color-text);
   display: flex;

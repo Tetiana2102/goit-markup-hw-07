@@ -8,28 +8,22 @@
   height: 708px;
 } 
 .team-text {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  @include align-font();
+  @include font (null, 36px, 1.16);
   color: var(--header-color);
-  align-items: center;
-  text-align: center;
   padding-bottom: 50px;
   padding-top: 94px;
 }
 .team-name {
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font (500, 16px, 1.18);
   color: var(--header-color);
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 .team-position {
-  font-size: 16px;
-  line-height: 1.18;
+  @include font (null, 16px, 1.18);
   color: var(--color-text);
   align-items: center;
   text-align: center;
@@ -62,10 +56,8 @@
 .team-social-link {
   width: 44px;
   height: 44px;
-  display: flex;
+  @include display-align();
   background-color: var(--title-color) ;
-  justify-content: center;
-  align-content: center;
   border-radius: 50%;
   margin-bottom: 30px;
   flex-direction: column;
