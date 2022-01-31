@@ -1,17 +1,14 @@
-.header {
+.page-header {
   background-color: var(--title-color);
   border-bottom-color:#ECECEC;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
-.header-container{
+.header-container,
+.container-items {
   display: flex;
   align-items: center;
 } 
-.container-items {
-  display: flex;
-  align-items: center; 
-}
 .header-list {
   display: flex;
 }
@@ -20,9 +17,6 @@
 }
 .header-connect {
   margin-left: auto;
-}
-.header-items {
-  display: flex;
 }
 .header-logo {
   margin-right: 93px;
@@ -34,8 +28,7 @@
   @include family-weight();
   @include font (null, 26px, 1.19);
   color: #2196F3;
-}
-.header-link {
+.header-item {
   @include font (bold, 14px, 1.33);
   letter-spacing: 0.02em;
   color: var(--header-color);
@@ -63,7 +56,6 @@
 .header-contacts {
   font-style: normal;
   @include font (bold, 14px, 1.33);
-  letter-spacing: 0.02em;
   color: var(--color-text);
   display: flex;
   flex-direction: row;
@@ -73,7 +65,6 @@
     color: var(--accent-color);
   }
 }
-
 .header-email {
   cursor: pointer;
   fill: var(--color-text);
