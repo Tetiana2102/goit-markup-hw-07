@@ -1,15 +1,12 @@
-.portfolio-container{
-  padding-left: 0px;
-  padding-right: 0px;
-  }
+
   .filter {
     padding-bottom: 0px;
   }
-  .filter-list {
+  .filter__list {
     display: flex;
     justify-content: center;
   }
-  .button-portfolio {
+  .filter__button {
     @include font (500, 16px, 1.63);
     color: var(--header-color);
     background: #F5F4FA;
@@ -28,7 +25,7 @@
       border-radius: 4px;
     }
   }
-  .filter-link:not(:last-child) {
+  .filter__link:not(:last-child) {
     margin-right: 8px;
   }
   

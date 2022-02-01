@@ -28,7 +28,8 @@
   @include family-weight();
   @include font (null, 26px, 1.19);
   color: #2196F3;
-.header-item {
+}
+.header-link {
   @include font (bold, 14px, 1.33);
   letter-spacing: 0.02em;
   color: var(--header-color);
@@ -37,10 +38,9 @@
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px; 
-  &:hover, &:focus{
+  &:hover, &:focus {
     color: var(--accent-color);
   }
-
 }
 .current::after {
   content: '';
@@ -71,6 +71,7 @@
   margin-right: 10px;
   .header-contacts:hover &,
   .header-contacts:focus & {
-  fill: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
-}
+    

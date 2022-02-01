@@ -55,7 +55,7 @@
 .feature-text {
   padding-top: 10px;
   font-style: normal;
-  @include font (normal, 14px, 1.17);
+  @include font (normal, 14px, 1.7);
   color: var(--color-text);
 }
 .feature-item:not(:last-child) {
